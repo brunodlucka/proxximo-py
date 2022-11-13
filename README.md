@@ -1,15 +1,15 @@
-## Projeto de Clinica para Programação p/ Internet 2
+## Projeto de Agendamento para Clinicas e Consultorios;
 
 No que consite este projeto:
-- Administrar medicos e especialidade e agendas
-- Criar uma agenda para disponibilizar as consultas
-- Permitir o usuario escolher um consulta em dia e horario de acordo com agenda do medico.
+- Administrar medicos/enfermeiros e especialidade e agendas
+- Criar um sistema de agendamento
+- Permitir o usuario escolher um consulta em dia e horario de acordo com agenda do medicos/enfermeiros.
 
 ## Configurando o ambiente para executar a aplicação web.
 Faça o download deste repositorio:
 
 ```
-$ git clone git@github.com:Dan-Source/projeto_clinica.git
+$ git clone git@github.com:brunodlucka/proxximo.py
 ```
 
 Crie um maquina virtual e instale a bibliotecas disponiveis no 
@@ -17,8 +17,8 @@ arquivo requirementes.txt:
 
 Entre na pasta criada e inicie um ambiente virtual:
 ```
-$ cd projeto_clinica
-pip install virtualenv
+$ cd proxximo.py
+$ pip install virtualenv
 $ py -m venv venv
 ```
 Depois voce deve ativa-lo com o seguinte comando:
