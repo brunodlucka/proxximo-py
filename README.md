@@ -24,7 +24,7 @@ $ py -m venv venv
 Depois voce deve ativa-lo com o seguinte comando:
 
 ```
-$ source ./venv/bin/activate
+$
 ```
 Apos ativado, instale as bibliotecas necessárias para executar o projeto:
 ```
@@ -33,8 +33,8 @@ Apos ativado, instale as bibliotecas necessárias para executar o projeto:
 Para poder ter o primeiro acesso e pode configurar o aplicação vamos executar o comando 
 'migrate' para gerar o banco de dados padrão do Django(SQLite). E depois criar o superusuario:
 ```
-(venv)$ ./manage.py migrate
-(venv)$ ./manage.py createsuperuser
+(venv)$ py ./manage.py migrate
+(venv)$ py ./manage.py createsuperuser
 Apelido/Usuário: admin
 E-mail: admin@mail.com
 Password: 
@@ -43,7 +43,7 @@ Password (again):
 
 Para iniciar o servidor depois deste passo você deve:
 ```
-(venv)$ ./manage.py runserver
+(venv)$  py ./manage.py runserver
 ```
 
 
