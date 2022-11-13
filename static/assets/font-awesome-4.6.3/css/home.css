@@ -3,7 +3,7 @@
 body{
   background-color: #021436;
   color: white;
-  max-width: 1200px;
+  max-width: 0 auto;
   margin: 0 auto;
   padding: 15px;
 }
@@ -21,8 +21,10 @@ header{
   font-weight: bold;
   margin-left: 30px;
   font-weight: 100;
- 
 }
+
+
+
 
 li{
   display: inline-block;
@@ -41,15 +43,17 @@ a:hover{
 .menu{
   border: 2px solid #38b6ff;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-left: 15px;
   font-family: sans-serif;
+  font-weight: bolder;
   
 }
 
 .menu:hover{
-  background-color: #4a0fee;
+  background-color: #0ab0f1;
   color: white;
+  
 }
 
 
@@ -66,15 +70,13 @@ h2{
 }
 
 span{
-  color: #38b6ff;
+  color: #4FD1C5;
 }
 
 .lista{
-  max-width: 600px;
-  display: flex;
+
   font-size: 35px;
   margin-bottom:40px;
-  margin-right: 30px;
   
 }
 
@@ -90,6 +92,23 @@ img{
 #logo{
   display: flex;
   flex-direction: row; 
+}
+
+.nurse {
+  width: 750px;
+}
+
+#title2 {
+  margin-left: 30px;
+}
+
+.sub-sub-titulo{
+ margin-left: 100px;
+}
+
+.sub-sub-frase{
+  margin-left: 110px;
+  margin-top: 20px;
 }
 
 .btn-home{
@@ -118,14 +137,14 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 
 /* CSS TELA DE CADASTRO */
 
-.cadastro {
-  margin-left: 380px;
+.criar-conta {
+  margin-left: 400px;
 }
 
+
 .btn-cadastrar {
-  margin-left: 130px;
-  border-radius: 12px;
- 
+  margin-left: 320px;
+  margin-top: 10px;  
   min-width: 350px;
   min-height: 60px;
   font-family: 'Nunito', sans-serif;
@@ -135,7 +154,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   font-weight: 700;
   color: #000000;
   background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
@@ -152,7 +171,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 }
 
 .btn-enviar {
-  margin-left: 130px;
+  margin-left: 120px;
   border-radius: 12px;
  
   min-width: 350px;
@@ -164,7 +183,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   font-weight: 700;
   color: #000000;
   background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
