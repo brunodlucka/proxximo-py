@@ -138,12 +138,13 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 /* CSS TELA DE CADASTRO */
 
 .criar-conta {
-  margin-left: 400px;
+  margin-left: 440px;
+  margin-bottom: 30px;
 }
 
 
 .btn-cadastrar {
-  margin-left: 320px;
+  margin-left: 380px;
   margin-top: 10px;  
   min-width: 350px;
   min-height: 60px;
@@ -164,14 +165,17 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   position: relative;
 }
 
+
 /* CSS TELA DE LOGIN */
 
 .page-header {
-  margin-left: 400px;
+  margin-left: 450px;
+  margin-bottom: 10px;
+
 }
 
 .btn-enviar {
-  margin-left: 120px;
+  margin-left: 380px;
   border-radius: 12px;
  
   min-width: 350px;
@@ -193,7 +197,39 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   position: relative;
 }
 
-/* CSS pagina de agendar atendimento */
+/* CSS pagina de Cadastrar Medico */
+
+.btn-agendar {
+  margin-left: 430px;
+  border-radius: 12px;
+
+
+  margin-top: 10px;
+  min-width: 350px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #000000;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  
+}
+
+.cadastro-medico {
+  margin-left: 570px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 
 
@@ -303,4 +339,75 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 
 .cadastro-logado {
   padding-left: 300px
+}
+
+/* CSS  AGENDAMENTOS SALVAR */
+
+.btn-salvar-agendamento {
+
+  margin-left: 380px;
+  border-radius: 12px;
+
+
+  margin-top: 20px;
+  min-width: 350px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #000000;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+
+}
+
+.titulo-agendamentos {
+  margin-left: 655px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+}
+
+/* CSS MINHA CONTA  */
+
+.alterar-dados {
+  padding-left:  300px;
+}
+
+.alterar-senha {
+  padding-left:  300px;
+}
+
+.btn-alterar-dados {
+  margin-left: 320px;
+  border-radius: 12px;
+
+
+  margin-top: 20px;
+  min-width: 350px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #000000;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
 }
