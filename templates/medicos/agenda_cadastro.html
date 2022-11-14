@@ -7,17 +7,17 @@
 {% endblock %}
 
 {% block container %}
-<div class="page-header">
-  <h1>Agendar Atendimento</h1>
-</div>
-<div class="row">
-    <div class="col-md-8 col-md-offset-2">
-        <form class="form-horizontal" method="post">
-            {% csrf_token %}
-            {% for error in form.non_field_errors %}
-            <div class="alert alert-danger">
+  <div class="page-header">
+    <h1>Agendar Atendimento</h1>
+  </div>
+  <div class="row">
+      <div class="col-md-9 col-md-offset-1">
+          <form class="form-horizontal" method="post">
+              {% csrf_token %}
+              {% for error in form.non_field_errors %}
+              <div class="alert alert-danger">
                 {{ error }}
-            </div>
+              </div>
             {% endfor %}
             <fieldset>
                 <div class="form-group{% if form.medico.errors %} has-error{% endif %}">

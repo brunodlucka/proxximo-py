@@ -10,39 +10,36 @@
 	 <link rel="stylesheet" href="{% static 'assets/custom.min.css' %}" media="screen" />
 	 <link rel="stylesheet" href="{% static 'assets/extra.css' %}" media="screen" />
 <link rel="stylesheet" href="/static/assets/font-awesome-4.6.3/css/home.css">
-
 </head>
+
  <body>  
     <div class="container">
       <div class="navbar-header">
         <div id="logo">
-           <img src="/static/assets/Imagens/logoenf.png"/>
-           <h1 id="title"> Sistema Proxximo</h1>
+            <img src="/static/assets/Imagens/logoenf.png"/>
+            <h1 id="title"> Sistema Proxximo</h1>
         </div>
       </div>
-      <div></div>
+
          <ul class="nav navbar-nav">
-            <ul> 
+          <ul> 
                <a class="menu" href="{% url 'index'%}"><li>Inicio</li></a>
                <a class="menu" href="{% url 'clientes:consulta_create'%}"><li>Agendamentos</li></a>
                <a class="menu" href="{% url 'accounts:login' %}"><li>Login</li></a>
                <a class="menu" href="{% url 'accounts:register' %}"><li>Cadastrar</li></a>
-            </ul>
-            <br>
+          </ul>
+          <br>
     </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-          
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>   
             {% if user.is_staff or user.is_superuser %}
-
-<div class="botoes-logado">
+  <div class="botoes-logado">
     <a class="botao1" href="{% url 'medicos:agendar_consulta'%}"><li>Agendar</li></a>
     <a class="botao2" href="{% url 'medicos:medico_cadastro'%}"><li>Medicos</li></a>
     <a class="botao3" href="{% url 'medicos:especialidade_cadastro'%}"><li>Especialidade</li></a>
 
               {% endif %}
-
               {% if user.is_authenticated %}
 
                 <a class="botao4" href="{% url 'accounts:index' %}"><li>Minha Conta</li></a>
@@ -51,25 +48,23 @@
               {% else %}
               {% endif %}
 
-      
-</div>
+  </div>
 
-    <div class="bruno">
+  <div class="bruno">
 
-    {% block messages %}
+      {% block messages %}
       {% for message in messages %}
 
-      <div class='alert alert-{{ message.tags}}'>
-        {{ message }}
-      </div>
-
+    <div class='alert alert-{{ message.tags}}'>
+      {{ message }}
+    </div>
+    
       {% endfor %}
-    {% endblock messages %} 
-		{% block container %} {% endblock %}
+      {% endblock messages %} 
+		  {% block container %} {% endblock %}
 
      <footer>
      </footer>
-
   </div>
 
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
