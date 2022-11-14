@@ -20,6 +20,7 @@
            <h1 id="title"> Sistema Proxximo</h1>
         </div>
       </div>
+      <div></div>
          <ul class="nav navbar-nav">
             <ul> 
                <a class="menu" href="{% url 'index'%}"><li>Inicio</li></a>
@@ -27,39 +28,33 @@
                <a class="menu" href="{% url 'accounts:login' %}"><li>Login</li></a>
                <a class="menu" href="{% url 'accounts:register' %}"><li>Cadastrar</li></a>
             </ul>
+            <br>
+    </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
           
             {% if user.is_staff or user.is_superuser %}
 
-            <li>
-               <a href="{% url 'medicos:agendar_consulta'%}">Agendas</a>
-            </li>
-            <li>
-               <a href="{% url 'medicos:medico_cadastro'%}">Medicos</a>
-            </li>
-            <li>
-               <a href="{% url 'medicos:especialidade_cadastro'%}">Especialidade</a>
-            </li>
+<div class="botoes-logado">
+    <a class="botao1" href="{% url 'medicos:agendar_consulta'%}"><li>Agendar</li></a>
+    <a class="botao2" href="{% url 'medicos:medico_cadastro'%}"><li>Medicos</li></a>
+    <a class="botao3" href="{% url 'medicos:especialidade_cadastro'%}"><li>Especialidade</li></a>
 
-            {% endif %}
+              {% endif %}
 
-          </ul>
+              {% if user.is_authenticated %}
 
-          <ul class="nav navbar-nav navbar-right">
+                <a class="botao4" href="{% url 'accounts:index' %}"><li>Minha Conta</li></a>
+                <a class="botao5" href="{% url 'accounts:logout' %}"><li>SAIR</li></a>
 
-            {% if user.is_authenticated %}
+              {% else %}
+              {% endif %}
 
-               <li><a href="{% url 'accounts:index' %}">Minha Conta</a></li>
-               <li><a href="{% url 'accounts:logout' %}">Sair</a></li>
+      
+</div>
 
-            {% else %}
-            {% endif %}
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="#">
+    <div class="bruno">
 
     {% block messages %}
       {% for message in messages %}

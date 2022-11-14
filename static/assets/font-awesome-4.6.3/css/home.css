@@ -193,4 +193,129 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   position: relative;
 }
 
-              
+/* CSS pagina de agendar atendimento */
+
+.btn-agendar-atendimento {
+ margin-left: 400px;
+ 
+  min-width: 350px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #000000;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+
+}
+
+/* CSS DE LOGOUT/ SAIR DO SISTEMA */
+
+#voce-saiu{
+  padding-top: 80px;
+  font-size: 40px;
+  padding-left: 60px;
+  padding-right: 80px;
+}
+
+.alert-link {
+  padding-left: 60px;
+}
+
+/* CSS Sistema Logado */
+
+.progress-bar-striped {
+  background-color: rgb(0, 255, 242);
+}
+
+             
+/* CSS LOGADO NO SISTEMA */
+
+.botoes-logado {
+  padding-left: 300px;
+
+}
+
+.botao1 {
+  border: 2px solid #38b6ff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  
+}
+
+.botao1:hover{
+  background-color: #ff9102;
+  color: rgb(2, 2, 2);
+}
+
+.botao2 {
+  border: 2px solid #38b6ff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  
+}
+
+.botao2:hover{
+  background-color: #00d4fa;
+  color: rgb(0, 0, 0);
+}
+
+.botao3 {
+  border: 2px solid #38b6ff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  
+}
+
+.botao3:hover{
+  background-color: #16f502;
+  color: rgb(0, 0, 0);
+}
+
+.botao4 {
+  border: 2px solid #38b6ff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  
+}
+
+.botao4:hover{
+  background-color: #f4f801;
+  color: rgb(2, 2, 2);
+}
+
+.botao5 {
+  border: 2px solid #38b6ff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  
+}
+
+.botao5:hover{
+  background-color: #f30202;
+  color: rgb(3, 3, 3);
+}
