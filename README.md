@@ -1,7 +1,7 @@
 ## Projeto de Agendamento para Clinicas e Consultorios;
 
 Em que consite este projeto:
-- Administrar de medicos e enfermeiros e suas especialidades.
+- Administrar medicos e enfermeiros e suas especialidades.
 - Criar um sistema de agendamento
 - Permitir o usuario escolher uma consulta em dia e horario de acordo com agenda dos medicos e enfermeiros.
 ## Configurando o ambiente para executar a aplicação web.
