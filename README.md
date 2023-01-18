@@ -56,3 +56,6 @@ Ou você pode ter acesso a admin do Django:
 [http://localhost:8000/admin](http://localhost:8000/admin)
 
 "# proxximo-py" 
+
+![image](https://user-images.githubusercontent.com/79919310/213270089-a0f6182e-6227-402c-bdba-c5232315ab85.png)
+
